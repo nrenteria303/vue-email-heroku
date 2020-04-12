@@ -177,8 +177,8 @@ ul.inbox-nav li a span.label {
     margin-bottom: 0;
 }
 
-.table-inbox tr td {
-    padding: 12px !important;
+.table-inbox tbody tr td {
+    padding: 12px;
     background: none repeat scroll 0 0 #f7f7f7;
 }
 
@@ -399,11 +399,27 @@ ul.inbox-pagination li {
     .container {
         padding: 0;
     }
-    .compose-wrapper {
-        padding: 10px 0;
+    .mail-box .sm-side {
+        width: 15%;
     }
-    .inbox-nav li a {
+    .mail-box .sm-side .user-head {
+        padding: 20px 5px;
+    }
+    .compose-wrapper {
+        padding: 10px 2px;
+    }
+    a.btn.btn-compose {
+        font-size: 1.2rem;
+    }
+    .inbox-body {
         padding: 0;
+    }
+    .table-inbox tbody tr td {
+        padding: 0 4px;
+        font-size: 1.25rem;
+    }
+    ul.inbox-nav li a {
+        padding: 0 5px;
     }
     .inbox-nav_text {
         display: none;
