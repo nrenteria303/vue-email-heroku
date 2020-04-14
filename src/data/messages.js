@@ -10,6 +10,7 @@ export default [
             <p><a href="#">SurveyDonkey.com</a></p>
         `,
         isImportant: false,
+        isSelected: false,
         isDeleted: false,
         isRead: false,
         type: 'incoming',
@@ -31,6 +32,7 @@ export default [
             <p><strong>Google Security Team</strong></p>
         `,
         isImportant: false,
+        isSelected: false,
         isDeleted: false,
         isRead: false,
         type: 'incoming',
@@ -49,6 +51,7 @@ export default [
             <p>The Facebook Team</p>
         `,
         isImportant: true,
+        isSelected: false,
         isDeleted: false,
         isRead: true,
         type: 'incoming',
@@ -68,6 +71,7 @@ export default [
             <p>We hope that you enjoy your stay!</p>
         `,
         isImportant: true,
+        isSelected: false,
         isDeleted: false,
         isRead: true,
         type: 'incoming',
@@ -90,6 +94,7 @@ export default [
             <p>Let me know if you get this, because who really uses e-mail these days?</p>
         `,
         isDeleted: false,
+        isSelected: false,
         type: 'outgoing',
         date: moment().subtract(7, 'days'),
         from: {
@@ -106,6 +111,7 @@ export default [
             <p>Order ID: ABCD1234</p>
         `,
         isImportant: false,
+        isSelected: false,
         isDeleted: false,
         isRead: true,
         type: 'incoming',
@@ -131,6 +137,7 @@ export default [
             <p><strong>The Skype Team</strong></p>
         `,
         isImportant: true,
+        isSelected: false,
         isDeleted: false,
         isRead: true,
         type: 'incoming',
@@ -150,6 +157,7 @@ export default [
             <p><a href="#we-want-to-steal-your-password">Click Here Now</a></p>
         `,
         isImportant: false,
+        isSelected: false,
         isDeleted: true,
         isRead: false,
         type: 'incoming',
@@ -170,6 +178,7 @@ export default [
             <p>Nick Renteria</p>
         `,
         isDeleted: false,
+        isSelected: false,
         type: 'outgoing',
         date: moment().subtract(100, 'days'),
         from: {
@@ -187,6 +196,7 @@ export default [
             <p>Let me know!</p>
         `,
         isDeleted: false,
+        isSelected: false,
         type: 'outgoing',
         date: moment().subtract(4, 'months'),
         from: {
@@ -203,6 +213,7 @@ export default [
             <p>Can't wait to see you there!</p>
         `,
         isImportant: false,
+        isSelected: false,
         isDeleted: true,
         isRead: true,
         type: 'incoming',
@@ -228,6 +239,7 @@ export default [
             <p>Regards,</p>
             <p>An Angry Customer</p>
         `,
+        isSelected: false,
         isDeleted: false,
         type: 'outgoing',
         date: moment().subtract(6, 'months'),
@@ -248,6 +260,7 @@ export default [
             <p>A random recruiter</p>
         `,
         isImportant: false,
+        isSelected: false,
         isDeleted: false,
         isRead: false,
         type: 'incoming',
@@ -271,6 +284,7 @@ export default [
             <p>You can find it here: <a href="#">https://youtu.be/watch?v=hg23hgls</a></p>
         `,
         isImportant: false,
+        isSelected: false,
         isDeleted: false,
         isRead: true,
         type: 'incoming',
@@ -297,6 +311,7 @@ export default [
             <p><strong>The Slack Team</strong></p>
         `,
         isImportant: false,
+        isSelected: false,
         isDeleted: false,
         isRead: true,
         type: 'incoming',
@@ -317,6 +332,7 @@ export default [
             </ul>
         `,
         isImportant: false,
+        isSelected: false,
         isDeleted: false,
         isRead: true,
         type: 'incoming',

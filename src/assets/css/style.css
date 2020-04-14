@@ -72,7 +72,7 @@ a.mail-dropdown {
 }
 
 .inbox-body {
-    padding: 20px 0 20px 20px;
+    padding: 10px 0 20px 20px;
     overflow-x: auto;
 }
 
@@ -171,6 +171,16 @@ ul.inbox-nav li a span.label {
     height: 40px;
     padding: 0 20px;
 }
+
+.top-btns {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;;
+}
+
+.top-btns button {
+    margin-left: auto;
+} 
 
 .table-inbox {
     border: 1px solid #d3d3d3;

@@ -3,6 +3,12 @@
         <div class="inbox-head">
             <h3>{{ currentView.title }}</h3>
         </div>
+        <div class="top-btns">
+            <a href="#" class="btn" @click="refresh" v-if="currentView.title === 'Inbox'">
+                <i class="fa fa-refresh"></i>&nbsp; Refresh
+            </a>
+            <button class="btn btn-danger" @click="deleteSelected" v-if="currentView.title !== 'Trash'">Delete selected</button>
+        </div>
         <keep-alive>
             <component :is="currentView.tag" :data="currentView.data"></component>
         </keep-alive>
@@ -45,6 +51,19 @@
                         }
                     }
                 ]
+            }
+        },
+        methods: {
+            refresh() {
+                eventBus.$emit('refreshMessages');
+            },
+            deleteSelected() {
+                this.messages.forEach(message => {
+                    if (message.isSelected) { message.isDeleted = true;} 
+                });
+                this.messages.forEach(message => {
+                    message.isSelected = false; 
+                });
             }
         },
         computed: {
