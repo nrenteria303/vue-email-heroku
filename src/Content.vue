@@ -3,7 +3,7 @@
         <div class="inbox-head">
             <h3>{{ currentView.title }}</h3>
         </div>
-        <div class="top-btns">
+        <div class="top-btns" v-if="currentView.tag !== 'app-view-message'">
             <a href="#" class="btn" @click="refresh" v-if="currentView.title === 'Inbox'">
                 <i class="fa fa-refresh"></i>&nbsp; Refresh
             </a>
@@ -59,7 +59,7 @@
             },
             deleteSelected() {
                 this.messages.forEach(message => {
-                    if (message.isSelected) { message.isDeleted = true;} 
+                    if (message.isSelected) {message.isDeleted = true;} 
                 });
                 this.messages.forEach(message => {
                     message.isSelected = false; 
